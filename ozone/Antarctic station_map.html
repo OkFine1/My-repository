@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da87ce47f9814615ee7932fff9dc75cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da87ce47f9814615ee7932fff9dc75cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da87ce47f9814615ee7932fff9dc75cc = L.map(
+                "map_da87ce47f9814615ee7932fff9dc75cc",
+                {
+                    center: [-68.02010481927711, -2.937157024096385],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_632376326d8414f8c58f3fd4c4ca413e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_632376326d8414f8c58f3fd4c4ca413e.addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var marker_26854112aad395eacb446c043319635f = L.marker(
+                [-69.37, 76.38],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_9c043dfd06fb34ef73f4b97807cc9362 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26854112aad395eacb446c043319635f.setIcon(icon_9c043dfd06fb34ef73f4b97807cc9362);
+        
+    
+        var popup_893b54fc38aff6f3667aca98da446603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_959460f911ac80791852dfefd2af61d1 = $(`<div id="html_959460f911ac80791852dfefd2af61d1" style="width: 100.0%; height: 100.0%;">Name:Zhongshan  Country:China  <br> Latitude: -69.37 Longitude: 76.38</div>`)[0];
+                popup_893b54fc38aff6f3667aca98da446603.setContent(html_959460f911ac80791852dfefd2af61d1);
+            
+        
+
+        marker_26854112aad395eacb446c043319635f.bindPopup(popup_893b54fc38aff6f3667aca98da446603)
+        ;
+
+        
+    
+    
+            var marker_0e7898df412a8deb8343b36cb4a14752 = L.marker(
+                [-89.9969, -24.8],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_2960083bb5b806c3bbfe4b69088d3f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e7898df412a8deb8343b36cb4a14752.setIcon(icon_2960083bb5b806c3bbfe4b69088d3f2f);
+        
+    
+        var popup_5e06a3b7aa9be2eb8f8078a7da75d72b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8254c2802f7195ed7f57d9d65a66408 = $(`<div id="html_f8254c2802f7195ed7f57d9d65a66408" style="width: 100.0%; height: 100.0%;">Name:South Pole(Amundsen-Scott)  Country:the Unitued States  <br> Latitude: -89.9969 Longitude: -24.8</div>`)[0];
+                popup_5e06a3b7aa9be2eb8f8078a7da75d72b.setContent(html_f8254c2802f7195ed7f57d9d65a66408);
+            
+        
+
+        marker_0e7898df412a8deb8343b36cb4a14752.bindPopup(popup_5e06a3b7aa9be2eb8f8078a7da75d72b)
+        ;
+
+        
+    
+    
+            var marker_4d690950ccf48b7ae51cb8985a0945a8 = L.marker(
+                [-75.5715, -25.5038],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_12b8abb886caf97a012c748a26424531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d690950ccf48b7ae51cb8985a0945a8.setIcon(icon_12b8abb886caf97a012c748a26424531);
+        
+    
+        var popup_aef11f1f8f155bc5c9b41da3499402fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b97ca0861dbce80717222a7f99f5376 = $(`<div id="html_3b97ca0861dbce80717222a7f99f5376" style="width: 100.0%; height: 100.0%;">Name:Halley  Country:United Kindom  <br> Latitude: -75.5715 Longitude: -25.5038</div>`)[0];
+                popup_aef11f1f8f155bc5c9b41da3499402fd.setContent(html_3b97ca0861dbce80717222a7f99f5376);
+            
+        
+
+        marker_4d690950ccf48b7ae51cb8985a0945a8.bindPopup(popup_aef11f1f8f155bc5c9b41da3499402fd)
+        ;
+
+        
+    
+    
+            var marker_b483a377eaf5e8fdfc7b4e50715f2075 = L.marker(
+                [-65.2457, -64.2571],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_3b5a495d9bfc9103504d8b0cde138e49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b483a377eaf5e8fdfc7b4e50715f2075.setIcon(icon_3b5a495d9bfc9103504d8b0cde138e49);
+        
+    
+        var popup_7fed0c92edfe7ffefafda672aa511be1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f57150222c9184f6cc2ba0946bc56f35 = $(`<div id="html_f57150222c9184f6cc2ba0946bc56f35" style="width: 100.0%; height: 100.0%;">Name:Faraday-Vernadsky  Country:Ukraine  <br> Latitude: -65.2457 Longitude: -64.2571</div>`)[0];
+                popup_7fed0c92edfe7ffefafda672aa511be1.setContent(html_f57150222c9184f6cc2ba0946bc56f35);
+            
+        
+
+        marker_b483a377eaf5e8fdfc7b4e50715f2075.bindPopup(popup_7fed0c92edfe7ffefafda672aa511be1)
+        ;
+
+        
+    
+    
+            var marker_9c91769c4b023e1c78aed67c34b10917 = L.marker(
+                [-67.566, -68.133],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_b932e9a546fd40d98276b79c90ba72ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c91769c4b023e1c78aed67c34b10917.setIcon(icon_b932e9a546fd40d98276b79c90ba72ce);
+        
+    
+        var popup_6d28faea3a8aec80d5c9815583ce60f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a17326d3f939b6eaf702c0365eba0e = $(`<div id="html_48a17326d3f939b6eaf702c0365eba0e" style="width: 100.0%; height: 100.0%;">Name:Rothera  Country:United Kindom  <br> Latitude: -67.566 Longitude: -68.133</div>`)[0];
+                popup_6d28faea3a8aec80d5c9815583ce60f6.setContent(html_48a17326d3f939b6eaf702c0365eba0e);
+            
+        
+
+        marker_9c91769c4b023e1c78aed67c34b10917.bindPopup(popup_6d28faea3a8aec80d5c9815583ce60f6)
+        ;
+
+        
+    
+    
+            var marker_b711367c138f72989e64eb03593ef100 = L.marker(
+                [-78.0, -162.0],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_fca2c3e5252ad977c78f2beb867c69bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b711367c138f72989e64eb03593ef100.setIcon(icon_fca2c3e5252ad977c78f2beb867c69bd);
+        
+    
+        var popup_9a9ffcd4fd1f1869b27b6cff5e5021c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b57f1551b63a182ed73bbbde406c5347 = $(`<div id="html_b57f1551b63a182ed73bbbde406c5347" style="width: 100.0%; height: 100.0%;">Name:Little America  Country:the Unitued States  <br> Latitude: -78.0 Longitude: -162.0</div>`)[0];
+                popup_9a9ffcd4fd1f1869b27b6cff5e5021c8.setContent(html_b57f1551b63a182ed73bbbde406c5347);
+            
+        
+
+        marker_b711367c138f72989e64eb03593ef100.bindPopup(popup_9a9ffcd4fd1f1869b27b6cff5e5021c8)
+        ;
+
+        
+    
+    
+            var marker_bbf958e7c7b1e68c586817b0147b5028 = L.marker(
+                [-80.0299, -119.5199],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_0c81351be12fe9a1a49be3ff13e0e6af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bbf958e7c7b1e68c586817b0147b5028.setIcon(icon_0c81351be12fe9a1a49be3ff13e0e6af);
+        
+    
+        var popup_e8a38fada619af3292f3f22c779ff21d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b173dcfc4753c9d0bd90c732e94707 = $(`<div id="html_57b173dcfc4753c9d0bd90c732e94707" style="width: 100.0%; height: 100.0%;">Name:Byrd  Country:the Unitued States  <br> Latitude: -80.0299 Longitude: -119.5199</div>`)[0];
+                popup_e8a38fada619af3292f3f22c779ff21d.setContent(html_57b173dcfc4753c9d0bd90c732e94707);
+            
+        
+
+        marker_bbf958e7c7b1e68c586817b0147b5028.bindPopup(popup_e8a38fada619af3292f3f22c779ff21d)
+        ;
+
+        
+    
+    
+            var marker_7cb7b9c8e05f570ff48f0f29fdea44ec = L.marker(
+                [-68.1299, -67.0999],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_1276d0f5ad976038315378e5ca1e77c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cb7b9c8e05f570ff48f0f29fdea44ec.setIcon(icon_1276d0f5ad976038315378e5ca1e77c3);
+        
+    
+        var popup_d8df3b77dc029aa71b59c521445c48ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db4a71859436011db3129ef9d788b81e = $(`<div id="html_db4a71859436011db3129ef9d788b81e" style="width: 100.0%; height: 100.0%;">Name:San Martin  Country:Argentina  <br> Latitude: -68.1299 Longitude: -67.0999</div>`)[0];
+                popup_d8df3b77dc029aa71b59c521445c48ed.setContent(html_db4a71859436011db3129ef9d788b81e);
+            
+        
+
+        marker_7cb7b9c8e05f570ff48f0f29fdea44ec.bindPopup(popup_d8df3b77dc029aa71b59c521445c48ed)
+        ;
+
+        
+    
+    
+            var marker_16ac12b734b9da87e214dab08a229a2a = L.marker(
+                [-64.7743, -64.0544],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_bf32ec60dcbfbb15610afeb669d6964e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16ac12b734b9da87e214dab08a229a2a.setIcon(icon_bf32ec60dcbfbb15610afeb669d6964e);
+        
+    
+        var popup_21d0579b4425b4159a92a289fba7bc5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69d462c3f2badb1cfd7e53879c5a9183 = $(`<div id="html_69d462c3f2badb1cfd7e53879c5a9183" style="width: 100.0%; height: 100.0%;">Name:Palmer station  Country:the Unitued States  <br> Latitude: -64.7743 Longitude: -64.0544</div>`)[0];
+                popup_21d0579b4425b4159a92a289fba7bc5e.setContent(html_69d462c3f2badb1cfd7e53879c5a9183);
+            
+        
+
+        marker_16ac12b734b9da87e214dab08a229a2a.bindPopup(popup_21d0579b4425b4159a92a289fba7bc5e)
+        ;
+
+        
+    
+    
+            var marker_963b4cf9124a5601759963798c96b48c = L.marker(
+                [-62.18, -58.9],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_adbe383271125727c861be4a1158467a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_963b4cf9124a5601759963798c96b48c.setIcon(icon_adbe383271125727c861be4a1158467a);
+        
+    
+        var popup_a26073f22fd3c66d95cde6cc042e28cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bf7723576201b6ab694adb16c98c58a = $(`<div id="html_0bf7723576201b6ab694adb16c98c58a" style="width: 100.0%; height: 100.0%;">Name:Artigas  Country:Uruguay  <br> Latitude: -62.18 Longitude: -58.9</div>`)[0];
+                popup_a26073f22fd3c66d95cde6cc042e28cd.setContent(html_0bf7723576201b6ab694adb16c98c58a);
+            
+        
+
+        marker_963b4cf9124a5601759963798c96b48c.bindPopup(popup_a26073f22fd3c66d95cde6cc042e28cd)
+        ;
+
+        
+    
+    
+            var marker_09810cd2e91a59e8d767d953f74ed6fb = L.marker(
+                [-62.2166, -58.7833],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_8953f55ae450aaeaf41bc1417dc2a504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09810cd2e91a59e8d767d953f74ed6fb.setIcon(icon_8953f55ae450aaeaf41bc1417dc2a504);
+        
+    
+        var popup_0880ce22d15db876db9f63d93d143ce1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c3b73f1219fbeecc666b174a41499be = $(`<div id="html_6c3b73f1219fbeecc666b174a41499be" style="width: 100.0%; height: 100.0%;">Name:King Sejong  Country:Republic of Korea  <br> Latitude: -62.2166 Longitude: -58.7833</div>`)[0];
+                popup_0880ce22d15db876db9f63d93d143ce1.setContent(html_6c3b73f1219fbeecc666b174a41499be);
+            
+        
+
+        marker_09810cd2e91a59e8d767d953f74ed6fb.bindPopup(popup_0880ce22d15db876db9f63d93d143ce1)
+        ;
+
+        
+    
+    
+            var marker_e93bcb05d8c9d05b75e8ff0038ad3ac3 = L.marker(
+                [-64.2401, -56.6248],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_b0c67ee9316e4ee4145433a082b42af2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e93bcb05d8c9d05b75e8ff0038ad3ac3.setIcon(icon_b0c67ee9316e4ee4145433a082b42af2);
+        
+    
+        var popup_92d7a2c0bd65d20c55b649b3bb7cae25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_156015fe105363b9109c0635364d1bd9 = $(`<div id="html_156015fe105363b9109c0635364d1bd9" style="width: 100.0%; height: 100.0%;">Name:Marambio  Country:Argentina  <br> Latitude: -64.2401 Longitude: -56.6248</div>`)[0];
+                popup_92d7a2c0bd65d20c55b649b3bb7cae25.setContent(html_156015fe105363b9109c0635364d1bd9);
+            
+        
+
+        marker_e93bcb05d8c9d05b75e8ff0038ad3ac3.bindPopup(popup_92d7a2c0bd65d20c55b649b3bb7cae25)
+        ;
+
+        
+    
+    
+            var marker_41b4102909ec69592e4286b2e70ea6e8 = L.marker(
+                [-81.0699, -40.5],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_6eaeab5bafad42dd328c17c0ec416448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41b4102909ec69592e4286b2e70ea6e8.setIcon(icon_6eaeab5bafad42dd328c17c0ec416448);
+        
+    
+        var popup_9ef01fd4e0de4d0ae64ad18736e59a7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd17407d4b2adbf997690d4eb66098c1 = $(`<div id="html_cd17407d4b2adbf997690d4eb66098c1" style="width: 100.0%; height: 100.0%;">Name:Doctor Sobral  Country:Argentina  <br> Latitude: -81.0699 Longitude: -40.5</div>`)[0];
+                popup_9ef01fd4e0de4d0ae64ad18736e59a7a.setContent(html_cd17407d4b2adbf997690d4eb66098c1);
+            
+        
+
+        marker_41b4102909ec69592e4286b2e70ea6e8.bindPopup(popup_9ef01fd4e0de4d0ae64ad18736e59a7a)
+        ;
+
+        
+    
+    
+            var marker_6b0e16f40e8c5b390dbd3220e7cf2620 = L.marker(
+                [-77.8769, -34.6269],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_12d0e4dea67c7ff7e7ab692068b602e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b0e16f40e8c5b390dbd3220e7cf2620.setIcon(icon_12d0e4dea67c7ff7e7ab692068b602e2);
+        
+    
+        var popup_50520c6c838ef51f33988effdca20580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7b38b24caf3007d8258af5e72d9964 = $(`<div id="html_0f7b38b24caf3007d8258af5e72d9964" style="width: 100.0%; height: 100.0%;">Name:Belgrano Ⅱ  Country:Argentina  <br> Latitude: -77.8769 Longitude: -34.6269</div>`)[0];
+                popup_50520c6c838ef51f33988effdca20580.setContent(html_0f7b38b24caf3007d8258af5e72d9964);
+            
+        
+
+        marker_6b0e16f40e8c5b390dbd3220e7cf2620.bindPopup(popup_50520c6c838ef51f33988effdca20580)
+        ;
+
+        
+    
+    
+            var marker_317492c6f100b5726b608d579554c8fa = L.marker(
+                [-54.2833, -36.4945],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_9a22e9276aa544bc298e4654ca07b252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_317492c6f100b5726b608d579554c8fa.setIcon(icon_9a22e9276aa544bc298e4654ca07b252);
+        
+    
+        var popup_bef2d5fee7cb38973d2e91c7a8e44108 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8e343b40b80102d6f07cd0fd06f14ba = $(`<div id="html_b8e343b40b80102d6f07cd0fd06f14ba" style="width: 100.0%; height: 100.0%;">Name:King Edward Point  Country:South Georgia and the South Sandwich Islands  <br> Latitude: -54.2833 Longitude: -36.4945</div>`)[0];
+                popup_bef2d5fee7cb38973d2e91c7a8e44108.setContent(html_b8e343b40b80102d6f07cd0fd06f14ba);
+            
+        
+
+        marker_317492c6f100b5726b608d579554c8fa.bindPopup(popup_bef2d5fee7cb38973d2e91c7a8e44108)
+        ;
+
+        
+    
+    
+            var marker_30208fd104714a6073bdc6e69b77c7c1 = L.marker(
+                [-70.666, -8.2659],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_76b9945045e4485355fa7c68da623d16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30208fd104714a6073bdc6e69b77c7c1.setIcon(icon_76b9945045e4485355fa7c68da623d16);
+        
+    
+        var popup_c966b0fb0cbc45623833ca115fddafcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dcd2e190da56d3941825a5d1c788865 = $(`<div id="html_5dcd2e190da56d3941825a5d1c788865" style="width: 100.0%; height: 100.0%;">Name:Neumayer  Country:Germany  <br> Latitude: -70.666 Longitude: -8.2659</div>`)[0];
+                popup_c966b0fb0cbc45623833ca115fddafcf.setContent(html_5dcd2e190da56d3941825a5d1c788865);
+            
+        
+
+        marker_30208fd104714a6073bdc6e69b77c7c1.bindPopup(popup_c966b0fb0cbc45623833ca115fddafcf)
+        ;
+
+        
+    
+    
+            var marker_91216f6b758b7657f22a6118a4a0be45 = L.marker(
+                [-70.4599, 11.4499],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_858ade4c184ec59bc4da9cad70f4511d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91216f6b758b7657f22a6118a4a0be45.setIcon(icon_858ade4c184ec59bc4da9cad70f4511d);
+        
+    
+        var popup_7e69117f40083c20ce4f36f8cbf6d81d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_187f809569cfd262a41b918479a0dfb1 = $(`<div id="html_187f809569cfd262a41b918479a0dfb1" style="width: 100.0%; height: 100.0%;">Name:Maitri  Country:India  <br> Latitude: -70.4599 Longitude: 11.4499</div>`)[0];
+                popup_7e69117f40083c20ce4f36f8cbf6d81d.setContent(html_187f809569cfd262a41b918479a0dfb1);
+            
+        
+
+        marker_91216f6b758b7657f22a6118a4a0be45.bindPopup(popup_7e69117f40083c20ce4f36f8cbf6d81d)
+        ;
+
+        
+    
+    
+            var marker_625668b9e5b71935feec9ff6106a3d7f = L.marker(
+                [-70.7699, 11.8699],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_f41ddceb2bc6a42fe00b725b8b92587c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_625668b9e5b71935feec9ff6106a3d7f.setIcon(icon_f41ddceb2bc6a42fe00b725b8b92587c);
+        
+    
+        var popup_d8c603be73c538161f39ebf4bc580ec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ea5c212705e490a2c7e2dc04e4f0892 = $(`<div id="html_8ea5c212705e490a2c7e2dc04e4f0892" style="width: 100.0%; height: 100.0%;">Name:Novolazarevskaya-Forster  Country:Russian Federation  <br> Latitude: -70.7699 Longitude: 11.8699</div>`)[0];
+                popup_d8c603be73c538161f39ebf4bc580ec9.setContent(html_8ea5c212705e490a2c7e2dc04e4f0892);
+            
+        
+
+        marker_625668b9e5b71935feec9ff6106a3d7f.bindPopup(popup_d8c603be73c538161f39ebf4bc580ec9)
+        ;
+
+        
+    
+    
+            var marker_a48a19d9c293d410ac99174cfeaa59cd = L.marker(
+                [-71.95, 23.35],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_e57cfe1461d3a19ee5789c5b5abeeba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a48a19d9c293d410ac99174cfeaa59cd.setIcon(icon_e57cfe1461d3a19ee5789c5b5abeeba9);
+        
+    
+        var popup_774619bc75f2ac9af6d14ce689151dfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c91a0615516a46dd41ca56255cf2a12 = $(`<div id="html_6c91a0615516a46dd41ca56255cf2a12" style="width: 100.0%; height: 100.0%;">Name:Princess Elisabeth station  Country:Belgium  <br> Latitude: -71.95 Longitude: 23.35</div>`)[0];
+                popup_774619bc75f2ac9af6d14ce689151dfc.setContent(html_6c91a0615516a46dd41ca56255cf2a12);
+            
+        
+
+        marker_a48a19d9c293d410ac99174cfeaa59cd.bindPopup(popup_774619bc75f2ac9af6d14ce689151dfc)
+        ;
+
+        
+    
+    
+            var marker_76e9bf0aa9c183cdb7935cd44a1bc006 = L.marker(
+                [-70.43, 24.3199],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_30f26a3967569cfe89966ccfc53da04f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_76e9bf0aa9c183cdb7935cd44a1bc006.setIcon(icon_30f26a3967569cfe89966ccfc53da04f);
+        
+    
+        var popup_e058538719884f2e97c2f0ef614a6c0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51ef2b5e37609398aced6a3161c87672 = $(`<div id="html_51ef2b5e37609398aced6a3161c87672" style="width: 100.0%; height: 100.0%;">Name:Base King Baudoin  Country:Belgium  <br> Latitude: -70.43 Longitude: 24.3199</div>`)[0];
+                popup_e058538719884f2e97c2f0ef614a6c0f.setContent(html_51ef2b5e37609398aced6a3161c87672);
+            
+        
+
+        marker_76e9bf0aa9c183cdb7935cd44a1bc006.bindPopup(popup_e058538719884f2e97c2f0ef614a6c0f)
+        ;
+
+        
+    
+    
+            var marker_58815163b9640889814eebedfc62d1f5 = L.marker(
+                [-69.0053, 39.5811],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_d8bec5a6c4dea98b03b42168660821f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58815163b9640889814eebedfc62d1f5.setIcon(icon_d8bec5a6c4dea98b03b42168660821f5);
+        
+    
+        var popup_d4b8ec40813b426cd06411ab29af6859 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cd3aa8cfe7682c726929143c0199cff = $(`<div id="html_4cd3aa8cfe7682c726929143c0199cff" style="width: 100.0%; height: 100.0%;">Name:Syowa  Country:Japan  <br> Latitude: -69.0053 Longitude: 39.5811</div>`)[0];
+                popup_d4b8ec40813b426cd06411ab29af6859.setContent(html_4cd3aa8cfe7682c726929143c0199cff);
+            
+        
+
+        marker_58815163b9640889814eebedfc62d1f5.bindPopup(popup_d4b8ec40813b426cd06411ab29af6859)
+        ;
+
+        
+    
+    
+            var marker_b5081367418db34c3ab11b210fb5f92b = L.marker(
+                [-49.3499, 70.2799],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_ae43575295c873018b9c8096a79ccad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5081367418db34c3ab11b210fb5f92b.setIcon(icon_ae43575295c873018b9c8096a79ccad2);
+        
+    
+        var popup_31505fa231f702f0f6087ff7d7432e5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03f08f55b7a7a0ad3860a2aab0564064 = $(`<div id="html_03f08f55b7a7a0ad3860a2aab0564064" style="width: 100.0%; height: 100.0%;">Name:Port-aux-Français (Iles Kerguélen)  Country:France  <br> Latitude: -49.3499 Longitude: 70.2799</div>`)[0];
+                popup_31505fa231f702f0f6087ff7d7432e5b.setContent(html_03f08f55b7a7a0ad3860a2aab0564064);
+            
+        
+
+        marker_b5081367418db34c3ab11b210fb5f92b.bindPopup(popup_31505fa231f702f0f6087ff7d7432e5b)
+        ;
+
+        
+    
+    
+            var marker_a6de6e07a417141d9f965b5c05cddf83 = L.marker(
+                [-68.5767, 77.9693],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_0467b2c1c89c85199fa81df9cfc7c47a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6de6e07a417141d9f965b5c05cddf83.setIcon(icon_0467b2c1c89c85199fa81df9cfc7c47a);
+        
+    
+        var popup_73caf10786f9b4395cb755ec96177170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a1ff554c16b674a6acb89d6b4ba6649 = $(`<div id="html_8a1ff554c16b674a6acb89d6b4ba6649" style="width: 100.0%; height: 100.0%;">Name:Davis  Country:Australia  <br> Latitude: -68.5767 Longitude: 77.9693</div>`)[0];
+                popup_73caf10786f9b4395cb755ec96177170.setContent(html_8a1ff554c16b674a6acb89d6b4ba6649);
+            
+        
+
+        marker_a6de6e07a417141d9f965b5c05cddf83.bindPopup(popup_73caf10786f9b4395cb755ec96177170)
+        ;
+
+        
+    
+    
+            var marker_f6a79c7161df6f7030c318ba7744cc85 = L.marker(
+                [-66.55, 93.0],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_db369025bf19d91253c545cc64a64431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6a79c7161df6f7030c318ba7744cc85.setIcon(icon_db369025bf19d91253c545cc64a64431);
+        
+    
+        var popup_5f03c5be1a7d6107d43ad1056770b988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b7fd92d236b9a42a0bf7df24bac4092 = $(`<div id="html_5b7fd92d236b9a42a0bf7df24bac4092" style="width: 100.0%; height: 100.0%;">Name:Mirny  Country:Russian Federation  <br> Latitude: -66.55 Longitude: 93.0</div>`)[0];
+                popup_5f03c5be1a7d6107d43ad1056770b988.setContent(html_5b7fd92d236b9a42a0bf7df24bac4092);
+            
+        
+
+        marker_f6a79c7161df6f7030c318ba7744cc85.bindPopup(popup_5f03c5be1a7d6107d43ad1056770b988)
+        ;
+
+        
+    
+    
+            var marker_3dc9d4d03dbab008d2470e1bd4fce210 = L.marker(
+                [-78.2699, 106.51],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_1f19df53a682aeed60e842cd6e3daa68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3dc9d4d03dbab008d2470e1bd4fce210.setIcon(icon_1f19df53a682aeed60e842cd6e3daa68);
+        
+    
+        var popup_5eaa39b5ca4f4dea211cd09223976c0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_139b5a9b3b503754c7ae2bb8e12e175a = $(`<div id="html_139b5a9b3b503754c7ae2bb8e12e175a" style="width: 100.0%; height: 100.0%;">Name:Vostok  Country:Russian Federation  <br> Latitude: -78.2699 Longitude: 106.51</div>`)[0];
+                popup_5eaa39b5ca4f4dea211cd09223976c0b.setContent(html_139b5a9b3b503754c7ae2bb8e12e175a);
+            
+        
+
+        marker_3dc9d4d03dbab008d2470e1bd4fce210.bindPopup(popup_5eaa39b5ca4f4dea211cd09223976c0b)
+        ;
+
+        
+    
+    
+            var marker_f2e7245f0a16c231fb48d1e245e99428 = L.marker(
+                [-75.0998, 123.3334],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_3d98c3d4d1cd1951b18e07b28cddedab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2e7245f0a16c231fb48d1e245e99428.setIcon(icon_3d98c3d4d1cd1951b18e07b28cddedab);
+        
+    
+        var popup_733123cdc33fc7717db17ba2a38f4334 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5607a359f1cf588bffdbea220ec05290 = $(`<div id="html_5607a359f1cf588bffdbea220ec05290" style="width: 100.0%; height: 100.0%;">Name:Concordia, Dôme C  Country:France  <br> Latitude: -75.0998 Longitude: 123.3334</div>`)[0];
+                popup_733123cdc33fc7717db17ba2a38f4334.setContent(html_5607a359f1cf588bffdbea220ec05290);
+            
+        
+
+        marker_f2e7245f0a16c231fb48d1e245e99428.bindPopup(popup_733123cdc33fc7717db17ba2a38f4334)
+        ;
+
+        
+    
+    
+            var marker_643bc9f4c01727aca435654b8c51b9ae = L.marker(
+                [-66.6629, 140.0025],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_f975e2c15b225a9f1b4e0660addf55bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_643bc9f4c01727aca435654b8c51b9ae.setIcon(icon_f975e2c15b225a9f1b4e0660addf55bb);
+        
+    
+        var popup_3bc7937f6134696ada742a00780ab45e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8555524c979c78c59fc3a4729ca534d0 = $(`<div id="html_8555524c979c78c59fc3a4729ca534d0" style="width: 100.0%; height: 100.0%;">Name:Dumont d'Urville  Country:France  <br> Latitude: -66.6629 Longitude: 140.0025</div>`)[0];
+                popup_3bc7937f6134696ada742a00780ab45e.setContent(html_8555524c979c78c59fc3a4729ca534d0);
+            
+        
+
+        marker_643bc9f4c01727aca435654b8c51b9ae.bindPopup(popup_3bc7937f6134696ada742a00780ab45e)
+        ;
+
+        
+    
+    
+            var marker_4508c1e5a924de97a2ef5ce9439e688b = L.marker(
+                [-72.3199, 170.22],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_f50c866d1bd276b4950b5db56cae348e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4508c1e5a924de97a2ef5ce9439e688b.setIcon(icon_f50c866d1bd276b4950b5db56cae348e);
+        
+    
+        var popup_550d949bebbd23866ffaab784359dcfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_061eabbaa1e1e217a3f00d2d21537763 = $(`<div id="html_061eabbaa1e1e217a3f00d2d21537763" style="width: 100.0%; height: 100.0%;">Name:Hallett  Country:New Zealand  <br> Latitude: -72.3199 Longitude: 170.22</div>`)[0];
+                popup_550d949bebbd23866ffaab784359dcfa.setContent(html_061eabbaa1e1e217a3f00d2d21537763);
+            
+        
+
+        marker_4508c1e5a924de97a2ef5ce9439e688b.bindPopup(popup_550d949bebbd23866ffaab784359dcfa)
+        ;
+
+        
+    
+    
+            var marker_9e32bb5097008eb09037339a8e31c316 = L.marker(
+                [-77.8484, 166.7562],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_78a9ccea834ea8e0b4a6b4dd5ed07a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e32bb5097008eb09037339a8e31c316.setIcon(icon_78a9ccea834ea8e0b4a6b4dd5ed07a9a);
+        
+    
+        var popup_429bbdcc5de23beab9423a9a4a241449 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_140c70b9d995e5c26b3ab6684b123340 = $(`<div id="html_140c70b9d995e5c26b3ab6684b123340" style="width: 100.0%; height: 100.0%;">Name:Scott Base  Country:New Zealand  <br> Latitude: -77.8484 Longitude: 166.7562</div>`)[0];
+                popup_429bbdcc5de23beab9423a9a4a241449.setContent(html_140c70b9d995e5c26b3ab6684b123340);
+            
+        
+
+        marker_9e32bb5097008eb09037339a8e31c316.bindPopup(popup_429bbdcc5de23beab9423a9a4a241449)
+        ;
+
+        
+    
+    
+            var marker_aaaa309f85e6eea3da7c20a3a58a6ccd = L.marker(
+                [-77.8301, 166.6605],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_994e0df3f64e5917e40355e1004cb219 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aaaa309f85e6eea3da7c20a3a58a6ccd.setIcon(icon_994e0df3f64e5917e40355e1004cb219);
+        
+    
+        var popup_a2f132a5587e91faf96a10ae3ce1b651 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5caa42d8486e95e3202d268ca4a9d666 = $(`<div id="html_5caa42d8486e95e3202d268ca4a9d666" style="width: 100.0%; height: 100.0%;">Name:Arrival Heights  Country:New Zealand  <br> Latitude: -77.8301 Longitude: 166.6605</div>`)[0];
+                popup_a2f132a5587e91faf96a10ae3ce1b651.setContent(html_5caa42d8486e95e3202d268ca4a9d666);
+            
+        
+
+        marker_aaaa309f85e6eea3da7c20a3a58a6ccd.bindPopup(popup_a2f132a5587e91faf96a10ae3ce1b651)
+        ;
+
+        
+    
+    
+            var marker_27319301b5fd4ae32abf9aa7fd69c304 = L.marker(
+                [-60.738, -44.7377],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_8344a3a1ce99458e6cbba35ea7b0ea07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27319301b5fd4ae32abf9aa7fd69c304.setIcon(icon_8344a3a1ce99458e6cbba35ea7b0ea07);
+        
+    
+        var popup_a08ef07f21f148dbd2f779aaf30f8411 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bafb4adec90e81447207c78edf64ab3 = $(`<div id="html_6bafb4adec90e81447207c78edf64ab3" style="width: 100.0%; height: 100.0%;">Name:Orcadas  Country:Argentina  <br> Latitude: -60.738 Longitude: -44.7377</div>`)[0];
+                popup_a08ef07f21f148dbd2f779aaf30f8411.setContent(html_6bafb4adec90e81447207c78edf64ab3);
+            
+        
+
+        marker_27319301b5fd4ae32abf9aa7fd69c304.bindPopup(popup_a08ef07f21f148dbd2f779aaf30f8411)
+        ;
+
+        
+    
+    
+            var marker_5bc25b2c5f8a57876346a2e4dc38c07d = L.marker(
+                [-64.3166, -62.983333],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_f8004eb2385dff65a91e358239a796da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5bc25b2c5f8a57876346a2e4dc38c07d.setIcon(icon_f8004eb2385dff65a91e358239a796da);
+        
+    
+        var popup_f6295377a98c7fd5f6a42997d95a3b68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970527fb5a16b2544f38112fadb4e5c2 = $(`<div id="html_970527fb5a16b2544f38112fadb4e5c2" style="width: 100.0%; height: 100.0%;">Name:Melchior  Country:Argentina  <br> Latitude: -64.3166 Longitude: -62.983333</div>`)[0];
+                popup_f6295377a98c7fd5f6a42997d95a3b68.setContent(html_970527fb5a16b2544f38112fadb4e5c2);
+            
+        
+
+        marker_5bc25b2c5f8a57876346a2e4dc38c07d.bindPopup(popup_f6295377a98c7fd5f6a42997d95a3b68)
+        ;
+
+        
+    
+    
+            var marker_5c7069c21d181c2f937915e41617a485 = L.marker(
+                [-62.9772, -60.6977],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_7750e57b08b7b51f39b7311a75104347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5c7069c21d181c2f937915e41617a485.setIcon(icon_7750e57b08b7b51f39b7311a75104347);
+        
+    
+        var popup_c0eee9cbbebd1d642b4170c89aca397b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b314fff84a32e33e2fc78ed5ff1ffbe2 = $(`<div id="html_b314fff84a32e33e2fc78ed5ff1ffbe2" style="width: 100.0%; height: 100.0%;">Name:Decepcíon  Country:Argentina  <br> Latitude: -62.9772 Longitude: -60.6977</div>`)[0];
+                popup_c0eee9cbbebd1d642b4170c89aca397b.setContent(html_b314fff84a32e33e2fc78ed5ff1ffbe2);
+            
+        
+
+        marker_5c7069c21d181c2f937915e41617a485.bindPopup(popup_c0eee9cbbebd1d642b4170c89aca397b)
+        ;
+
+        
+    
+    
+            var marker_06fdd7066d32ec302a54b2dd662ec643 = L.marker(
+                [-64.8955, -64.9375],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_d78c8a548256ec208d8cd7e9d85fa4e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_06fdd7066d32ec302a54b2dd662ec643.setIcon(icon_d78c8a548256ec208d8cd7e9d85fa4e7);
+        
+    
+        var popup_75b81c736bb13989d28a3724785cb246 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f85383345e2a8a9ab580458b0d4ac5db = $(`<div id="html_f85383345e2a8a9ab580458b0d4ac5db" style="width: 100.0%; height: 100.0%;">Name:Brown  Country:Argentina  <br> Latitude: -64.8955 Longitude: -64.9375</div>`)[0];
+                popup_75b81c736bb13989d28a3724785cb246.setContent(html_f85383345e2a8a9ab580458b0d4ac5db);
+            
+        
+
+        marker_06fdd7066d32ec302a54b2dd662ec643.bindPopup(popup_75b81c736bb13989d28a3724785cb246)
+        ;
+
+        
+    
+    
+            var marker_5560d1d0c932a5fc319e26cc4e2f11a0 = L.marker(
+                [-63.3983, -56.9961],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_3a9c7d94312187b0381dd0c42fb325fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5560d1d0c932a5fc319e26cc4e2f11a0.setIcon(icon_3a9c7d94312187b0381dd0c42fb325fc);
+        
+    
+        var popup_fe0692106fad67cce3de6a4af83d2fa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bd30cebe4380e988185083257d4cd3d = $(`<div id="html_7bd30cebe4380e988185083257d4cd3d" style="width: 100.0%; height: 100.0%;">Name:Esperanza  Country:Argentina  <br> Latitude: -63.3983 Longitude: -56.9961</div>`)[0];
+                popup_fe0692106fad67cce3de6a4af83d2fa0.setContent(html_7bd30cebe4380e988185083257d4cd3d);
+            
+        
+
+        marker_5560d1d0c932a5fc319e26cc4e2f11a0.bindPopup(popup_fe0692106fad67cce3de6a4af83d2fa0)
+        ;
+
+        
+    
+    
+            var marker_a64e7b13f405d0cf3f3bb88e5cf6c6c9 = L.marker(
+                [-62.5947, -55.9186],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_e4a69e892787659017872ee0fc1c5c96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a64e7b13f405d0cf3f3bb88e5cf6c6c9.setIcon(icon_e4a69e892787659017872ee0fc1c5c96);
+        
+    
+        var popup_51e197e7732218dd49c2233911c77c88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_086adf87cf15f73940cc92f33ec64947 = $(`<div id="html_086adf87cf15f73940cc92f33ec64947" style="width: 100.0%; height: 100.0%;">Name:Cámara  Country:Argentina  <br> Latitude: -62.5947 Longitude: -55.9186</div>`)[0];
+                popup_51e197e7732218dd49c2233911c77c88.setContent(html_086adf87cf15f73940cc92f33ec64947);
+            
+        
+
+        marker_a64e7b13f405d0cf3f3bb88e5cf6c6c9.bindPopup(popup_51e197e7732218dd49c2233911c77c88)
+        ;
+
+        
+    
+    
+            var marker_4300d9a867a6a29b4c2d61c92ea564ca = L.marker(
+                [-64.9755, -60.0713],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_137daf431583de4a5839bb918620be16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4300d9a867a6a29b4c2d61c92ea564ca.setIcon(icon_137daf431583de4a5839bb918620be16);
+        
+    
+        var popup_5f304be14e2ed3f9c86a1db7b8a5b661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ddc580563ec0f4e158a8d577ab31738 = $(`<div id="html_8ddc580563ec0f4e158a8d577ab31738" style="width: 100.0%; height: 100.0%;">Name:Matienzo Base  Country:Argentina  <br> Latitude: -64.9755 Longitude: -60.0713</div>`)[0];
+                popup_5f304be14e2ed3f9c86a1db7b8a5b661.setContent(html_8ddc580563ec0f4e158a8d577ab31738);
+            
+        
+
+        marker_4300d9a867a6a29b4c2d61c92ea564ca.bindPopup(popup_5f304be14e2ed3f9c86a1db7b8a5b661)
+        ;
+
+        
+    
+    
+            var marker_fdf3f0fe78fdcbd0e246201b11448b85 = L.marker(
+                [-63.478, -56.2288],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_8c120af1c5d9438d6b85b436c05decd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fdf3f0fe78fdcbd0e246201b11448b85.setIcon(icon_8c120af1c5d9438d6b85b436c05decd6);
+        
+    
+        var popup_6a555e5d9c8507a7b3fe737e87efd81f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c6341bece6d5dfb8635b88bbff924b = $(`<div id="html_c5c6341bece6d5dfb8635b88bbff924b" style="width: 100.0%; height: 100.0%;">Name:Petrel   Country:Argentina  <br> Latitude: -63.478 Longitude: -56.2288</div>`)[0];
+                popup_6a555e5d9c8507a7b3fe737e87efd81f.setContent(html_c5c6341bece6d5dfb8635b88bbff924b);
+            
+        
+
+        marker_fdf3f0fe78fdcbd0e246201b11448b85.bindPopup(popup_6a555e5d9c8507a7b3fe737e87efd81f)
+        ;
+
+        
+    
+    
+            var marker_65915f35a5f2bf86d245c5ec38037d04 = L.marker(
+                [-62.2383, -58.6677],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_e1eabbd20ee8e10a653e4c2d50fa5ae5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_65915f35a5f2bf86d245c5ec38037d04.setIcon(icon_e1eabbd20ee8e10a653e4c2d50fa5ae5);
+        
+    
+        var popup_1fd13fafd64a3aedae9a99ecfcb1bf9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfa66440c253b6cfa1458356efaba6f4 = $(`<div id="html_cfa66440c253b6cfa1458356efaba6f4" style="width: 100.0%; height: 100.0%;">Name:Carlini  Country:Argentina  <br> Latitude: -62.2383 Longitude: -58.6677</div>`)[0];
+                popup_1fd13fafd64a3aedae9a99ecfcb1bf9b.setContent(html_cfa66440c253b6cfa1458356efaba6f4);
+            
+        
+
+        marker_65915f35a5f2bf86d245c5ec38037d04.bindPopup(popup_1fd13fafd64a3aedae9a99ecfcb1bf9b)
+        ;
+
+        
+    
+    
+            var marker_2c53a5e597ba6c2d930abc04a99b14fc = L.marker(
+                [-67.6027, 62.8736],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_9d8b33ac7bada60e2e430280df33a898 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2c53a5e597ba6c2d930abc04a99b14fc.setIcon(icon_9d8b33ac7bada60e2e430280df33a898);
+        
+    
+        var popup_1c5e4ec6c88320a0b6dba70b903bb1de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_384685997b7095f19849b96c9b7b947a = $(`<div id="html_384685997b7095f19849b96c9b7b947a" style="width: 100.0%; height: 100.0%;">Name:Mawson  Country:Australia  <br> Latitude: -67.6027 Longitude: 62.8736</div>`)[0];
+                popup_1c5e4ec6c88320a0b6dba70b903bb1de.setContent(html_384685997b7095f19849b96c9b7b947a);
+            
+        
+
+        marker_2c53a5e597ba6c2d930abc04a99b14fc.bindPopup(popup_1c5e4ec6c88320a0b6dba70b903bb1de)
+        ;
+
+        
+    
+    
+            var marker_faee409d53ebf25d4beecf0c0df66540 = L.marker(
+                [-66.2825, 110.5266],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_3ddbecdf9656b7122840af578f984575 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_faee409d53ebf25d4beecf0c0df66540.setIcon(icon_3ddbecdf9656b7122840af578f984575);
+        
+    
+        var popup_90df06ee50dd3ae0df36f1f6bee21dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c09e3a9f435e3953643622a06dacf2f5 = $(`<div id="html_c09e3a9f435e3953643622a06dacf2f5" style="width: 100.0%; height: 100.0%;">Name:Casey  Country:Australia  <br> Latitude: -66.2825 Longitude: 110.5266</div>`)[0];
+                popup_90df06ee50dd3ae0df36f1f6bee21dd4.setContent(html_c09e3a9f435e3953643622a06dacf2f5);
+            
+        
+
+        marker_faee409d53ebf25d4beecf0c0df66540.bindPopup(popup_90df06ee50dd3ae0df36f1f6bee21dd4)
+        ;
+
+        
+    
+    
+            var marker_99b9b4c49585e2267dad1ad84f937127 = L.marker(
+                [-62.0852, -58.3914],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_ba1f9bcabf0a40a0a3dee4644d13e360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_99b9b4c49585e2267dad1ad84f937127.setIcon(icon_ba1f9bcabf0a40a0a3dee4644d13e360);
+        
+    
+        var popup_d4cef5765aebebb695afde8ac7d50923 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_310124a8c31f3bda807fd5c2ae1c200c = $(`<div id="html_310124a8c31f3bda807fd5c2ae1c200c" style="width: 100.0%; height: 100.0%;">Name:Ferraz  Country:Brazil  <br> Latitude: -62.0852 Longitude: -58.3914</div>`)[0];
+                popup_d4cef5765aebebb695afde8ac7d50923.setContent(html_310124a8c31f3bda807fd5c2ae1c200c);
+            
+        
+
+        marker_99b9b4c49585e2267dad1ad84f937127.bindPopup(popup_d4cef5765aebebb695afde8ac7d50923)
+        ;
+
+        
+    
+    
+            var marker_0b4be2acd04ad341f77b888acfa16231 = L.marker(
+                [-62.4788, -59.6644],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_94a4abc1084bca220f9b52923567e6ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0b4be2acd04ad341f77b888acfa16231.setIcon(icon_94a4abc1084bca220f9b52923567e6ad);
+        
+    
+        var popup_95ac67afd953d2e9ce43ff178887de7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c97495a47f54e8a551abef52861ba48a = $(`<div id="html_c97495a47f54e8a551abef52861ba48a" style="width: 100.0%; height: 100.0%;">Name:Arturo Prat  Country:Chile  <br> Latitude: -62.4788 Longitude: -59.6644</div>`)[0];
+                popup_95ac67afd953d2e9ce43ff178887de7d.setContent(html_c97495a47f54e8a551abef52861ba48a);
+            
+        
+
+        marker_0b4be2acd04ad341f77b888acfa16231.bindPopup(popup_95ac67afd953d2e9ce43ff178887de7d)
+        ;
+
+        
+    
+    
+            var marker_4c25ed513db90a9969c04e9bf033e486 = L.marker(
+                [-63.3208, -57.8997],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_729184869a89aabe0d06d24cb3242785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4c25ed513db90a9969c04e9bf033e486.setIcon(icon_729184869a89aabe0d06d24cb3242785);
+        
+    
+        var popup_5ce4af0c7f88aed5ec2f813be21edb8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a71c30c6ab16b2e8ad0982f83394a73d = $(`<div id="html_a71c30c6ab16b2e8ad0982f83394a73d" style="width: 100.0%; height: 100.0%;">Name:O'Higgins  Country:Chile  <br> Latitude: -63.3208 Longitude: -57.8997</div>`)[0];
+                popup_5ce4af0c7f88aed5ec2f813be21edb8f.setContent(html_a71c30c6ab16b2e8ad0982f83394a73d);
+            
+        
+
+        marker_4c25ed513db90a9969c04e9bf033e486.bindPopup(popup_5ce4af0c7f88aed5ec2f813be21edb8f)
+        ;
+
+        
+    
+    
+            var marker_974b2e906c3670372bde9235042d5667 = L.marker(
+                [-64.8238, -62.8569],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_6c42ddb2494bfad8bb59f72369aa6664 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_974b2e906c3670372bde9235042d5667.setIcon(icon_6c42ddb2494bfad8bb59f72369aa6664);
+        
+    
+        var popup_9c58753ab5a6e285aece3cc239946e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8966b7d683ca16584a57cc0fe12f492f = $(`<div id="html_8966b7d683ca16584a57cc0fe12f492f" style="width: 100.0%; height: 100.0%;">Name:President Gabriel Gonzalez Videla  Country:Chile  <br> Latitude: -64.8238 Longitude: -62.8569</div>`)[0];
+                popup_9c58753ab5a6e285aece3cc239946e68.setContent(html_8966b7d683ca16584a57cc0fe12f492f);
+            
+        
+
+        marker_974b2e906c3670372bde9235042d5667.bindPopup(popup_9c58753ab5a6e285aece3cc239946e68)
+        ;
+
+        
+    
+    
+            var marker_f83e251664a1fefc0baa7a0b91deae20 = L.marker(
+                [-62.3783, -59.7008],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_264e01bc2ab6b09cf16f3413c36abd5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f83e251664a1fefc0baa7a0b91deae20.setIcon(icon_264e01bc2ab6b09cf16f3413c36abd5b);
+        
+    
+        var popup_d64d8912ca2611238ea74b935bf967e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3169110f903230ed4eb117b2d33facaf = $(`<div id="html_3169110f903230ed4eb117b2d33facaf" style="width: 100.0%; height: 100.0%;">Name:Risopatrón  Country:Chile  <br> Latitude: -62.3783 Longitude: -59.7008</div>`)[0];
+                popup_d64d8912ca2611238ea74b935bf967e1.setContent(html_3169110f903230ed4eb117b2d33facaf);
+            
+        
+
+        marker_f83e251664a1fefc0baa7a0b91deae20.bindPopup(popup_d64d8912ca2611238ea74b935bf967e1)
+        ;
+
+        
+    
+    
+            var marker_453366304d63f16abc90f4119e26b24b = L.marker(
+                [-64.8758, -63.5833],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_0012ac89713361eb0876c44920b6500f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_453366304d63f16abc90f4119e26b24b.setIcon(icon_0012ac89713361eb0876c44920b6500f);
+        
+    
+        var popup_fa32c27136d850f6da9f26f09c0a14a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_809b434c59abfcd0d5f2593290b2ac38 = $(`<div id="html_809b434c59abfcd0d5f2593290b2ac38" style="width: 100.0%; height: 100.0%;">Name:Yelcho   Country:Chile  <br> Latitude: -64.8758 Longitude: -63.5833</div>`)[0];
+                popup_fa32c27136d850f6da9f26f09c0a14a6.setContent(html_809b434c59abfcd0d5f2593290b2ac38);
+            
+        
+
+        marker_453366304d63f16abc90f4119e26b24b.bindPopup(popup_fa32c27136d850f6da9f26f09c0a14a6)
+        ;
+
+        
+    
+    
+            var marker_78e6467eaf80e34dcc08f43cf48b61a1 = L.marker(
+                [-62.2002, -58.9625],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_c399113a0339734c8d225088cbb0d3b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_78e6467eaf80e34dcc08f43cf48b61a1.setIcon(icon_c399113a0339734c8d225088cbb0d3b4);
+        
+    
+        var popup_146b6c4b4eed937364951ee071d4a1ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e9a050079adca677f97987266c76127 = $(`<div id="html_0e9a050079adca677f97987266c76127" style="width: 100.0%; height: 100.0%;">Name:Frei  Country:Chile  <br> Latitude: -62.2002 Longitude: -58.9625</div>`)[0];
+                popup_146b6c4b4eed937364951ee071d4a1ff.setContent(html_0e9a050079adca677f97987266c76127);
+            
+        
+
+        marker_78e6467eaf80e34dcc08f43cf48b61a1.bindPopup(popup_146b6c4b4eed937364951ee071d4a1ff)
+        ;
+
+        
+    
+    
+            var marker_3bd19507654a1ec3fbe1cc9e28ca0535 = L.marker(
+                [-67.7611, -68.9144],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_30dc26cdabc3d7a68a025196dee7a673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3bd19507654a1ec3fbe1cc9e28ca0535.setIcon(icon_30dc26cdabc3d7a68a025196dee7a673);
+        
+    
+        var popup_2b071a16313234fb8cda93de03f0d7d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b29e73b09b23985f75ed3344d7d606a1 = $(`<div id="html_b29e73b09b23985f75ed3344d7d606a1" style="width: 100.0%; height: 100.0%;">Name:Carvajal Villaroel  Country:Chile  <br> Latitude: -67.7611 Longitude: -68.9144</div>`)[0];
+                popup_2b071a16313234fb8cda93de03f0d7d0.setContent(html_b29e73b09b23985f75ed3344d7d606a1);
+            
+        
+
+        marker_3bd19507654a1ec3fbe1cc9e28ca0535.bindPopup(popup_2b071a16313234fb8cda93de03f0d7d0)
+        ;
+
+        
+    
+    
+            var marker_40559daa943ff11fc5f14a36506a3aea = L.marker(
+                [-62.47, -60.7711],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_71ace6a2f50738c90004739b3dd84aab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_40559daa943ff11fc5f14a36506a3aea.setIcon(icon_71ace6a2f50738c90004739b3dd84aab);
+        
+    
+        var popup_bd9487cfbaeff6f6e8cb661ec5045ff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ea30d69f1b2cdda75b853243e0096b4 = $(`<div id="html_4ea30d69f1b2cdda75b853243e0096b4" style="width: 100.0%; height: 100.0%;">Name:Dr.Guillermo Mann  Country:Chile  <br> Latitude: -62.47 Longitude: -60.7711</div>`)[0];
+                popup_bd9487cfbaeff6f6e8cb661ec5045ff7.setContent(html_4ea30d69f1b2cdda75b853243e0096b4);
+            
+        
+
+        marker_40559daa943ff11fc5f14a36506a3aea.bindPopup(popup_bd9487cfbaeff6f6e8cb661ec5045ff7)
+        ;
+
+        
+    
+    
+            var marker_0ec7e1f7d73b044421c3acb49f236a2c = L.marker(
+                [-62.2013, -58.9622],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_05d49974b62daea0e110ec0b6ef50acf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0ec7e1f7d73b044421c3acb49f236a2c.setIcon(icon_05d49974b62daea0e110ec0b6ef50acf);
+        
+    
+        var popup_33979c13fb3e6dcaceb2ce80ff871608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b6d96d237927d4be2e0a4208a050a2e = $(`<div id="html_0b6d96d237927d4be2e0a4208a050a2e" style="width: 100.0%; height: 100.0%;">Name:Professor Julio Escudero  Country:Chile  <br> Latitude: -62.2013 Longitude: -58.9622</div>`)[0];
+                popup_33979c13fb3e6dcaceb2ce80ff871608.setContent(html_0b6d96d237927d4be2e0a4208a050a2e);
+            
+        
+
+        marker_0ec7e1f7d73b044421c3acb49f236a2c.bindPopup(popup_33979c13fb3e6dcaceb2ce80ff871608)
+        ;
+
+        
+    
+    
+            var marker_521ad29de4a6f1cef5cc5da8f5687ca2 = L.marker(
+                [-62.2169, -58.9619],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_2e28fba0b473ad3d2f779ee2e36048b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_521ad29de4a6f1cef5cc5da8f5687ca2.setIcon(icon_2e28fba0b473ad3d2f779ee2e36048b5);
+        
+    
+        var popup_efde4c28f18e82e3f58c8fb0bd00fd77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f42f7f760a1c2162f4331e952060a58 = $(`<div id="html_5f42f7f760a1c2162f4331e952060a58" style="width: 100.0%; height: 100.0%;">Name:Great Wall  Country:China  <br> Latitude: -62.2169 Longitude: -58.9619</div>`)[0];
+                popup_efde4c28f18e82e3f58c8fb0bd00fd77.setContent(html_5f42f7f760a1c2162f4331e952060a58);
+            
+        
+
+        marker_521ad29de4a6f1cef5cc5da8f5687ca2.bindPopup(popup_efde4c28f18e82e3f58c8fb0bd00fd77)
+        ;
+
+        
+    
+    
+            var marker_e68fe4035556214882acfacd0aae05e7 = L.marker(
+                [-80.4172, 77.1161],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_d6281e8ff31720eb4c5797ab061e3700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e68fe4035556214882acfacd0aae05e7.setIcon(icon_d6281e8ff31720eb4c5797ab061e3700);
+        
+    
+        var popup_681cf9930f77e072c50e053527603a25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53585f3f0a5e2d594593caf80bbf9de5 = $(`<div id="html_53585f3f0a5e2d594593caf80bbf9de5" style="width: 100.0%; height: 100.0%;">Name:Kunlun  Country:China  <br> Latitude: -80.4172 Longitude: 77.1161</div>`)[0];
+                popup_681cf9930f77e072c50e053527603a25.setContent(html_53585f3f0a5e2d594593caf80bbf9de5);
+            
+        
+
+        marker_e68fe4035556214882acfacd0aae05e7.bindPopup(popup_681cf9930f77e072c50e053527603a25)
+        ;
+
+        
+    
+    
+            var marker_9e754e6291802ca81692d1d827bdc0fc = L.marker(
+                [-73.8638, 76.9741],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_043a328847f23a22ec6f60ffd2960e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e754e6291802ca81692d1d827bdc0fc.setIcon(icon_043a328847f23a22ec6f60ffd2960e29);
+        
+    
+        var popup_0be65c9392a42a2a6dfd7876b93a34fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf59744ae5c0364a1e2f01cf21010020 = $(`<div id="html_bf59744ae5c0364a1e2f01cf21010020" style="width: 100.0%; height: 100.0%;">Name:Taishan  Country:China  <br> Latitude: -73.8638 Longitude: 76.9741</div>`)[0];
+                popup_0be65c9392a42a2a6dfd7876b93a34fc.setContent(html_bf59744ae5c0364a1e2f01cf21010020);
+            
+        
+
+        marker_9e754e6291802ca81692d1d827bdc0fc.bindPopup(popup_0be65c9392a42a2a6dfd7876b93a34fc)
+        ;
+
+        
+    
+    
+            var marker_37b966cda75cd4ba648fb1fc8e81c27a = L.marker(
+                [-63.8005, -57.8822],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_403271d78f1c679bdaf9368a7f6cec30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_37b966cda75cd4ba648fb1fc8e81c27a.setIcon(icon_403271d78f1c679bdaf9368a7f6cec30);
+        
+    
+        var popup_9cd0fd779db77308fad7392bf8f144aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d42b7800a22d29b4ae384d26195403ca = $(`<div id="html_d42b7800a22d29b4ae384d26195403ca" style="width: 100.0%; height: 100.0%;">Name:Johann Gregor Mendel  Country:Czech Republic  <br> Latitude: -63.8005 Longitude: -57.8822</div>`)[0];
+                popup_9cd0fd779db77308fad7392bf8f144aa.setContent(html_d42b7800a22d29b4ae384d26195403ca);
+            
+        
+
+        marker_37b966cda75cd4ba648fb1fc8e81c27a.bindPopup(popup_9cd0fd779db77308fad7392bf8f144aa)
+        ;
+
+        
+    
+    
+            var marker_889fa245ce1407704e3ca67152ffabfb = L.marker(
+                [-62.4491, -59.7413],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_bf33062e33ce341b547424aeb80378ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_889fa245ce1407704e3ca67152ffabfb.setIcon(icon_bf33062e33ce341b547424aeb80378ee);
+        
+    
+        var popup_94a029b05955b124164f773821079f7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4013fc845ebd74a7f458b895c9775a0 = $(`<div id="html_d4013fc845ebd74a7f458b895c9775a0" style="width: 100.0%; height: 100.0%;">Name:Pedro Vicente Maldonado  Country:Czech Republic  <br> Latitude: -62.4491 Longitude: -59.7413</div>`)[0];
+                popup_94a029b05955b124164f773821079f7d.setContent(html_d4013fc845ebd74a7f458b895c9775a0);
+            
+        
+
+        marker_889fa245ce1407704e3ca67152ffabfb.bindPopup(popup_94a029b05955b124164f773821079f7d)
+        ;
+
+        
+    
+    
+            var marker_67c780b592bd8c9180401492e849d10b = L.marker(
+                [-73.0422, -13.4072],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_6427d91bce6f10a7eee870e6f10f6069 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_67c780b592bd8c9180401492e849d10b.setIcon(icon_6427d91bce6f10a7eee870e6f10f6069);
+        
+    
+        var popup_e6d9d74924d25a2bb6ca35cd15c93e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7f57b41fe0f371f6c9141ac772d374c = $(`<div id="html_e7f57b41fe0f371f6c9141ac772d374c" style="width: 100.0%; height: 100.0%;">Name:Aboa  Country:Finland  <br> Latitude: -73.0422 Longitude: -13.4072</div>`)[0];
+                popup_e6d9d74924d25a2bb6ca35cd15c93e68.setContent(html_e7f57b41fe0f371f6c9141ac772d374c);
+            
+        
+
+        marker_67c780b592bd8c9180401492e849d10b.bindPopup(popup_e6d9d74924d25a2bb6ca35cd15c93e68)
+        ;
+
+        
+    
+    
+            var marker_a74768e7069feff9f68d76da3c902f00 = L.marker(
+                [-75.0, 0.0666],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_3c2bd68bb41f97ef6c92fb9a2ae915fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a74768e7069feff9f68d76da3c902f00.setIcon(icon_3c2bd68bb41f97ef6c92fb9a2ae915fe);
+        
+    
+        var popup_c07f206335fbd4851d33fb95eff014c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e1de105180a3081061521f865dda0a4 = $(`<div id="html_9e1de105180a3081061521f865dda0a4" style="width: 100.0%; height: 100.0%;">Name:Kohnen  Country:Germany  <br> Latitude: -75.0 Longitude: 0.0666</div>`)[0];
+                popup_c07f206335fbd4851d33fb95eff014c0.setContent(html_9e1de105180a3081061521f865dda0a4);
+            
+        
+
+        marker_a74768e7069feff9f68d76da3c902f00.bindPopup(popup_c07f206335fbd4851d33fb95eff014c0)
+        ;
+
+        
+    
+    
+            var marker_295f77b2748b7d34a4129aae775794ab = L.marker(
+                [-62.2375, -58.6666],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_730c6dd453bf8bbdae0483603be67a59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_295f77b2748b7d34a4129aae775794ab.setIcon(icon_730c6dd453bf8bbdae0483603be67a59);
+        
+    
+        var popup_20a40be3fd5164454c2179732b47072d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aecdab66d3eeddcafddc84992aa9ba1 = $(`<div id="html_5aecdab66d3eeddcafddc84992aa9ba1" style="width: 100.0%; height: 100.0%;">Name:Dallmann(Laboratory)  Country:Germany  <br> Latitude: -62.2375 Longitude: -58.6666</div>`)[0];
+                popup_20a40be3fd5164454c2179732b47072d.setContent(html_5aecdab66d3eeddcafddc84992aa9ba1);
+            
+        
+
+        marker_295f77b2748b7d34a4129aae775794ab.bindPopup(popup_20a40be3fd5164454c2179732b47072d)
+        ;
+
+        
+    
+    
+            var marker_5d5444c69f6aab5b3c79b3dc7f7642a3 = L.marker(
+                [-69.408, 76.7872],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_06ae723c43656162b290ef50de134b93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5d5444c69f6aab5b3c79b3dc7f7642a3.setIcon(icon_06ae723c43656162b290ef50de134b93);
+        
+    
+        var popup_8b3a9d19c2de9e7bec824423a2a96326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bfe22abe255dc65ac0e57c65b428b6e = $(`<div id="html_2bfe22abe255dc65ac0e57c65b428b6e" style="width: 100.0%; height: 100.0%;">Name:Bharati  Country:India  <br> Latitude: -69.408 Longitude: 76.7872</div>`)[0];
+                popup_8b3a9d19c2de9e7bec824423a2a96326.setContent(html_2bfe22abe255dc65ac0e57c65b428b6e);
+            
+        
+
+        marker_5d5444c69f6aab5b3c79b3dc7f7642a3.bindPopup(popup_8b3a9d19c2de9e7bec824423a2a96326)
+        ;
+
+        
+    
+    
+            var marker_6d2891b4da0a35b03a61c3ff7b54e315 = L.marker(
+                [-74.6941, 164.1138],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_e542147d794d05a006dea0ee7fbd2b22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6d2891b4da0a35b03a61c3ff7b54e315.setIcon(icon_e542147d794d05a006dea0ee7fbd2b22);
+        
+    
+        var popup_12d9cb094dd8a0e0deb0b8ffa907add1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22f58eff16e5439164ab684fe372f3f3 = $(`<div id="html_22f58eff16e5439164ab684fe372f3f3" style="width: 100.0%; height: 100.0%;">Name:Mario Zucchelli  Country:Italy  <br> Latitude: -74.6941 Longitude: 164.1138</div>`)[0];
+                popup_12d9cb094dd8a0e0deb0b8ffa907add1.setContent(html_22f58eff16e5439164ab684fe372f3f3);
+            
+        
+
+        marker_6d2891b4da0a35b03a61c3ff7b54e315.bindPopup(popup_12d9cb094dd8a0e0deb0b8ffa907add1)
+        ;
+
+        
+    
+    
+            var marker_21128c92287c3b6025b7499b5d6f7267 = L.marker(
+                [-67.5708, -68.128],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_62dca5afb5d554476019d0c6f4461829 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_21128c92287c3b6025b7499b5d6f7267.setIcon(icon_62dca5afb5d554476019d0c6f4461829);
+        
+    
+        var popup_c1feff1f8c9be699c60d6e93e5c76ad8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f369fc632d180631c7c827e5f07ded85 = $(`<div id="html_f369fc632d180631c7c827e5f07ded85" style="width: 100.0%; height: 100.0%;">Name:Dirck Gerritsz Laboratory  Country:Netherlands  <br> Latitude: -67.5708 Longitude: -68.128</div>`)[0];
+                popup_c1feff1f8c9be699c60d6e93e5c76ad8.setContent(html_f369fc632d180631c7c827e5f07ded85);
+            
+        
+
+        marker_21128c92287c3b6025b7499b5d6f7267.bindPopup(popup_c1feff1f8c9be699c60d6e93e5c76ad8)
+        ;
+
+        
+    
+    
+            var marker_0f816f3d0554aac207cc795967d7c678 = L.marker(
+                [-72.0116, 2.535],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_387882c3317e8047b424cfd9992f51d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f816f3d0554aac207cc795967d7c678.setIcon(icon_387882c3317e8047b424cfd9992f51d4);
+        
+    
+        var popup_03bd8687e9c11f6ef0ee9f4ed4a5eb69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7154acca6011d30055d7f1792bacd25 = $(`<div id="html_e7154acca6011d30055d7f1792bacd25" style="width: 100.0%; height: 100.0%;">Name:Troll  Country:Norway  <br> Latitude: -72.0116 Longitude: 2.535</div>`)[0];
+                popup_03bd8687e9c11f6ef0ee9f4ed4a5eb69.setContent(html_e7154acca6011d30055d7f1792bacd25);
+            
+        
+
+        marker_0f816f3d0554aac207cc795967d7c678.bindPopup(popup_03bd8687e9c11f6ef0ee9f4ed4a5eb69)
+        ;
+
+        
+    
+    
+            var marker_27b2fd76f7aca1eba4c7c46b685ed02b = L.marker(
+                [-62.0913, -58.47],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_60125b8ec0bd6e6771f361f4360cfebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27b2fd76f7aca1eba4c7c46b685ed02b.setIcon(icon_60125b8ec0bd6e6771f361f4360cfebe);
+        
+    
+        var popup_9ab526aa0b88ea6e20e35bbe182f77f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f28bf44e2fc041faa09c0507363050a = $(`<div id="html_1f28bf44e2fc041faa09c0507363050a" style="width: 100.0%; height: 100.0%;">Name:Machu Picchu  Country:Peru  <br> Latitude: -62.0913 Longitude: -58.47</div>`)[0];
+                popup_9ab526aa0b88ea6e20e35bbe182f77f3.setContent(html_1f28bf44e2fc041faa09c0507363050a);
+            
+        
+
+        marker_27b2fd76f7aca1eba4c7c46b685ed02b.bindPopup(popup_9ab526aa0b88ea6e20e35bbe182f77f3)
+        ;
+
+        
+    
+    
+            var marker_1415554f5363f9e1531d25b00661f3af = L.marker(
+                [-62.1602, -58.4733],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_84225d228de2acf8546c782f2a6dfc99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1415554f5363f9e1531d25b00661f3af.setIcon(icon_84225d228de2acf8546c782f2a6dfc99);
+        
+    
+        var popup_cf3f48b69ffc834411c0b81bb12590aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5ff52c648103a2d8541094cc5fcb97 = $(`<div id="html_ec5ff52c648103a2d8541094cc5fcb97" style="width: 100.0%; height: 100.0%;">Name:Henryk Arctowski  Country:Poland  <br> Latitude: -62.1602 Longitude: -58.4733</div>`)[0];
+                popup_cf3f48b69ffc834411c0b81bb12590aa.setContent(html_ec5ff52c648103a2d8541094cc5fcb97);
+            
+        
+
+        marker_1415554f5363f9e1531d25b00661f3af.bindPopup(popup_cf3f48b69ffc834411c0b81bb12590aa)
+        ;
+
+        
+    
+    
+            var marker_9d14b104b15afd651351f8c5dda75efa = L.marker(
+                [-67.6597, 46.155],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_68fe1b6d8a751f932594c3c923b9eac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9d14b104b15afd651351f8c5dda75efa.setIcon(icon_68fe1b6d8a751f932594c3c923b9eac6);
+        
+    
+        var popup_a152e032b8ebc5244195bd0a93bb76ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4619111524b295d171abd6a53b7b6e91 = $(`<div id="html_4619111524b295d171abd6a53b7b6e91" style="width: 100.0%; height: 100.0%;">Name:Vechernyaya  Country:Republic of Belarus  <br> Latitude: -67.6597 Longitude: 46.155</div>`)[0];
+                popup_a152e032b8ebc5244195bd0a93bb76ba.setContent(html_4619111524b295d171abd6a53b7b6e91);
+            
+        
+
+        marker_9d14b104b15afd651351f8c5dda75efa.bindPopup(popup_a152e032b8ebc5244195bd0a93bb76ba)
+        ;
+
+        
+    
+    
+            var marker_a51a8ed4464f64636eeccb98cc7deb10 = L.marker(
+                [-74.6238, 164.2288],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_b654556f9612bf0f56c1f390126caac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a51a8ed4464f64636eeccb98cc7deb10.setIcon(icon_b654556f9612bf0f56c1f390126caac2);
+        
+    
+        var popup_7a9f64f902cb4efd1d8eee94352cd3d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5edff5de995bc5f143c7f4026f6e0d0c = $(`<div id="html_5edff5de995bc5f143c7f4026f6e0d0c" style="width: 100.0%; height: 100.0%;">Name:Jang Bogo  Country:South Korea  <br> Latitude: -74.6238 Longitude: 164.2288</div>`)[0];
+                popup_7a9f64f902cb4efd1d8eee94352cd3d9.setContent(html_5edff5de995bc5f143c7f4026f6e0d0c);
+            
+        
+
+        marker_a51a8ed4464f64636eeccb98cc7deb10.bindPopup(popup_7a9f64f902cb4efd1d8eee94352cd3d9)
+        ;
+
+        
+    
+    
+            var marker_7d187df794fc459c4d05b5c5c38967e4 = L.marker(
+                [-67.6658, 45.8411],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_2f3065fcebd0f25e12e0ad2fcbbbd58d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7d187df794fc459c4d05b5c5c38967e4.setIcon(icon_2f3065fcebd0f25e12e0ad2fcbbbd58d);
+        
+    
+        var popup_62f2474418342ae4eeb26a48aaf4b90e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fdb3b914087f64fbba45052c1287080 = $(`<div id="html_6fdb3b914087f64fbba45052c1287080" style="width: 100.0%; height: 100.0%;">Name:Molodezhnaya  Country:Russian Federation  <br> Latitude: -67.6658 Longitude: 45.8411</div>`)[0];
+                popup_62f2474418342ae4eeb26a48aaf4b90e.setContent(html_6fdb3b914087f64fbba45052c1287080);
+            
+        
+
+        marker_7d187df794fc459c4d05b5c5c38967e4.bindPopup(popup_62f2474418342ae4eeb26a48aaf4b90e)
+        ;
+
+        
+    
+    
+            var marker_2bf8603e1734a47efadec62552529454 = L.marker(
+                [-69.3808, 76.3902],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_7b958f69f0fde805fefc414624a625b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2bf8603e1734a47efadec62552529454.setIcon(icon_7b958f69f0fde805fefc414624a625b2);
+        
+    
+        var popup_73b561c61a03470d79cc05f915e91510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_618bb78804600f2978205335e748c4c0 = $(`<div id="html_618bb78804600f2978205335e748c4c0" style="width: 100.0%; height: 100.0%;">Name:Progress  Country:Russian Federation  <br> Latitude: -69.3808 Longitude: 76.3902</div>`)[0];
+                popup_73b561c61a03470d79cc05f915e91510.setContent(html_618bb78804600f2978205335e748c4c0);
+            
+        
+
+        marker_2bf8603e1734a47efadec62552529454.bindPopup(popup_73b561c61a03470d79cc05f915e91510)
+        ;
+
+        
+    
+    
+            var marker_63e9e529826558abd44305488284a02d = L.marker(
+                [-69.7333, 73.7],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_26ff6997a74c76a483e0d8076ba1161a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_63e9e529826558abd44305488284a02d.setIcon(icon_26ff6997a74c76a483e0d8076ba1161a);
+        
+    
+        var popup_7d7be7837bc680752008019360fc9981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0da1abf4566ac7689f5c22362acbca56 = $(`<div id="html_0da1abf4566ac7689f5c22362acbca56" style="width: 100.0%; height: 100.0%;">Name:Druzhnaya-4  Country:Russian Federation  <br> Latitude: -69.7333 Longitude: 73.7</div>`)[0];
+                popup_7d7be7837bc680752008019360fc9981.setContent(html_0da1abf4566ac7689f5c22362acbca56);
+            
+        
+
+        marker_63e9e529826558abd44305488284a02d.bindPopup(popup_7d7be7837bc680752008019360fc9981)
+        ;
+
+        
+    
+    
+            var marker_583db6bdb8c07059d6adda92640e2b61 = L.marker(
+                [-74.7663, -136.8027],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_4b8062b92413d2a471a63b552af4ddd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_583db6bdb8c07059d6adda92640e2b61.setIcon(icon_4b8062b92413d2a471a63b552af4ddd2);
+        
+    
+        var popup_1d9faea08e66071549a97746cf392ee0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2844b91fab8527f4cbdab760a4558ce6 = $(`<div id="html_2844b91fab8527f4cbdab760a4558ce6" style="width: 100.0%; height: 100.0%;">Name:Russkaya  Country:Russian Federation  <br> Latitude: -74.7663 Longitude: -136.8027</div>`)[0];
+                popup_1d9faea08e66071549a97746cf392ee0.setContent(html_2844b91fab8527f4cbdab760a4558ce6);
+            
+        
+
+        marker_583db6bdb8c07059d6adda92640e2b61.bindPopup(popup_1d9faea08e66071549a97746cf392ee0)
+        ;
+
+        
+    
+    
+            var marker_f2e6fd482cbab9bfd0021a83b5f3d7ab = L.marker(
+                [-69.5013, 159.3919],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_6c36ee7e8a8aa1a72d045ebbcbcc0fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f2e6fd482cbab9bfd0021a83b5f3d7ab.setIcon(icon_6c36ee7e8a8aa1a72d045ebbcbcc0fec);
+        
+    
+        var popup_b6fb4254e019a6395f18716c024f2d13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c771decf89b206196f29972e0aef79a = $(`<div id="html_8c771decf89b206196f29972e0aef79a" style="width: 100.0%; height: 100.0%;">Name:Leningradskaya  Country:Russian Federation  <br> Latitude: -69.5013 Longitude: 159.3919</div>`)[0];
+                popup_b6fb4254e019a6395f18716c024f2d13.setContent(html_8c771decf89b206196f29972e0aef79a);
+            
+        
+
+        marker_f2e6fd482cbab9bfd0021a83b5f3d7ab.bindPopup(popup_b6fb4254e019a6395f18716c024f2d13)
+        ;
+
+        
+    
+    
+            var marker_049e47b7c6397dd6ae043d6fe3cf02e8 = L.marker(
+                [-62.1986, -58.9605],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_cab0bfaba9a4e94c8afa4a6f9dc910bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_049e47b7c6397dd6ae043d6fe3cf02e8.setIcon(icon_cab0bfaba9a4e94c8afa4a6f9dc910bf);
+        
+    
+        var popup_bdc6fbc9252fd7da8b990018a27c92ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7d5aa38b9160122a182b6802abc162 = $(`<div id="html_8f7d5aa38b9160122a182b6802abc162" style="width: 100.0%; height: 100.0%;">Name:Bellingshausen  Country:Russian Federation  <br> Latitude: -62.1986 Longitude: -58.9605</div>`)[0];
+                popup_bdc6fbc9252fd7da8b990018a27c92ee.setContent(html_8f7d5aa38b9160122a182b6802abc162);
+            
+        
+
+        marker_049e47b7c6397dd6ae043d6fe3cf02e8.bindPopup(popup_bdc6fbc9252fd7da8b990018a27c92ee)
+        ;
+
+        
+    
+    
+            var marker_2656b997c7de0fc4219827f43b149d45 = L.marker(
+                [-71.6736, -2.8286],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_049969905cf9377394171ba3d0c909fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2656b997c7de0fc4219827f43b149d45.setIcon(icon_049969905cf9377394171ba3d0c909fd);
+        
+    
+        var popup_b39fd0a47e4c3a6d383bf31e6b4d37dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eb1c2013d61f37b42a42091a3c3d23a = $(`<div id="html_9eb1c2013d61f37b42a42091a3c3d23a" style="width: 100.0%; height: 100.0%;">Name:SANAE IV  Country:South Africa  <br> Latitude: -71.6736 Longitude: -2.8286</div>`)[0];
+                popup_b39fd0a47e4c3a6d383bf31e6b4d37dd.setContent(html_9eb1c2013d61f37b42a42091a3c3d23a);
+            
+        
+
+        marker_2656b997c7de0fc4219827f43b149d45.bindPopup(popup_b39fd0a47e4c3a6d383bf31e6b4d37dd)
+        ;
+
+        
+    
+    
+            var marker_74ad647a463291c2528c9f8cdceb8368 = L.marker(
+                [-62.663, -60.388],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_d93d36987f892006fcfe6d1ffb5b9599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_74ad647a463291c2528c9f8cdceb8368.setIcon(icon_d93d36987f892006fcfe6d1ffb5b9599);
+        
+    
+        var popup_46c1ae574667a29c21b26e47a8f0d223 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bab4e087186c8fdcb7d3f2de64d4705 = $(`<div id="html_1bab4e087186c8fdcb7d3f2de64d4705" style="width: 100.0%; height: 100.0%;">Name:Juan Carlos I  Country:Spain  <br> Latitude: -62.663 Longitude: -60.388</div>`)[0];
+                popup_46c1ae574667a29c21b26e47a8f0d223.setContent(html_1bab4e087186c8fdcb7d3f2de64d4705);
+            
+        
+
+        marker_74ad647a463291c2528c9f8cdceb8368.bindPopup(popup_46c1ae574667a29c21b26e47a8f0d223)
+        ;
+
+        
+    
+    
+            var marker_c62d9ec167e17a70d54a9577cd21cb55 = L.marker(
+                [-62.9769, -60.6752],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_07883437de38aac86e548fddbc756712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c62d9ec167e17a70d54a9577cd21cb55.setIcon(icon_07883437de38aac86e548fddbc756712);
+        
+    
+        var popup_1e798b0e131068e7e08958c768cd8535 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5a14f042ad9b3b1589af01a3c21a0d9 = $(`<div id="html_d5a14f042ad9b3b1589af01a3c21a0d9" style="width: 100.0%; height: 100.0%;">Name:Gabriel de Castilla  Country:Spain  <br> Latitude: -62.9769 Longitude: -60.6752</div>`)[0];
+                popup_1e798b0e131068e7e08958c768cd8535.setContent(html_d5a14f042ad9b3b1589af01a3c21a0d9);
+            
+        
+
+        marker_c62d9ec167e17a70d54a9577cd21cb55.bindPopup(popup_1e798b0e131068e7e08958c768cd8535)
+        ;
+
+        
+    
+    
+            var marker_0834a3181f5bc22a3344f4572e938599 = L.marker(
+                [-62.6636, -61.0944],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_e47d7c0e1fbc44aa8a0458a4102738da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0834a3181f5bc22a3344f4572e938599.setIcon(icon_e47d7c0e1fbc44aa8a0458a4102738da);
+        
+    
+        var popup_ac2cf951c91772da97964a69afafa058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a358ea38c4066f35a5a5123562579005 = $(`<div id="html_a358ea38c4066f35a5a5123562579005" style="width: 100.0%; height: 100.0%;">Name:International Field Camp Peninsula Byers  Country:Spain  <br> Latitude: -62.6636 Longitude: -61.0944</div>`)[0];
+                popup_ac2cf951c91772da97964a69afafa058.setContent(html_a358ea38c4066f35a5a5123562579005);
+            
+        
+
+        marker_0834a3181f5bc22a3344f4572e938599.bindPopup(popup_ac2cf951c91772da97964a69afafa058)
+        ;
+
+        
+    
+    
+            var marker_399d3e740662fa6de18763f6a5c339c3 = L.marker(
+                [-73.04, -13.3986],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_b986ca2edeb641152e47dd53379f50c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_399d3e740662fa6de18763f6a5c339c3.setIcon(icon_b986ca2edeb641152e47dd53379f50c0);
+        
+    
+        var popup_e9834d6f09ae42736699f02326bbde78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99669d877e5690971f8ec32cbb6d3678 = $(`<div id="html_99669d877e5690971f8ec32cbb6d3678" style="width: 100.0%; height: 100.0%;">Name:Wasa  Country:Sweden  <br> Latitude: -73.04 Longitude: -13.3986</div>`)[0];
+                popup_e9834d6f09ae42736699f02326bbde78.setContent(html_99669d877e5690971f8ec32cbb6d3678);
+            
+        
+
+        marker_399d3e740662fa6de18763f6a5c339c3.bindPopup(popup_e9834d6f09ae42736699f02326bbde78)
+        ;
+
+        
+    
+    
+            var marker_f898391e33b981bb8b99e1f9d4133b9b = L.marker(
+                [-60.7083, -45.595],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_aa72c9daecf07e73ce1c5c45c4ba203a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f898391e33b981bb8b99e1f9d4133b9b.setIcon(icon_aa72c9daecf07e73ce1c5c45c4ba203a);
+        
+    
+        var popup_c174d63f1bba9c434cb57601ce5781be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2505739d926f24bb6123d566d612967b = $(`<div id="html_2505739d926f24bb6123d566d612967b" style="width: 100.0%; height: 100.0%;">Name:Signy  Country:United Kindom  <br> Latitude: -60.7083 Longitude: -45.595</div>`)[0];
+                popup_c174d63f1bba9c434cb57601ce5781be.setContent(html_2505739d926f24bb6123d566d612967b);
+            
+        
+
+        marker_f898391e33b981bb8b99e1f9d4133b9b.bindPopup(popup_c174d63f1bba9c434cb57601ce5781be)
+        ;
+
+        
+    
+    
+            var marker_eea500d576a3e19f077511e351bb635f = L.marker(
+                [-77.8463, 166.6683],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_64e74721db772eb716bd80315100a658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eea500d576a3e19f077511e351bb635f.setIcon(icon_64e74721db772eb716bd80315100a658);
+        
+    
+        var popup_3fac706ae797562c1eeaec14b913ddf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00b138ddce07862d59a99dccdd96bb04 = $(`<div id="html_00b138ddce07862d59a99dccdd96bb04" style="width: 100.0%; height: 100.0%;">Name:McMurdo Station  Country:the United States  <br> Latitude: -77.8463 Longitude: 166.6683</div>`)[0];
+                popup_3fac706ae797562c1eeaec14b913ddf2.setContent(html_00b138ddce07862d59a99dccdd96bb04);
+            
+        
+
+        marker_eea500d576a3e19f077511e351bb635f.bindPopup(popup_3fac706ae797562c1eeaec14b913ddf2)
+        ;
+
+        
+    
+    
+            var marker_36fb8e50384d25906c136fe91f3957c7 = L.marker(
+                [-63.3833, -56.9833],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_667c14011011f263ecbb0175d3accc9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_36fb8e50384d25906c136fe91f3957c7.setIcon(icon_667c14011011f263ecbb0175d3accc9a);
+        
+    
+        var popup_ad16603dcd806310b67d3fefcf63686e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e765e80dd043fcbc7bd8957628bb25f9 = $(`<div id="html_e765e80dd043fcbc7bd8957628bb25f9" style="width: 100.0%; height: 100.0%;">Name:Ruperto Elichiribehety(Hope Bay)  Country:Uruguay  <br> Latitude: -63.3833 Longitude: -56.9833</div>`)[0];
+                popup_ad16603dcd806310b67d3fefcf63686e.setContent(html_e765e80dd043fcbc7bd8957628bb25f9);
+            
+        
+
+        marker_36fb8e50384d25906c136fe91f3957c7.bindPopup(popup_ad16603dcd806310b67d3fefcf63686e)
+        ;
+
+        
+    
+    
+            var marker_0a37b9d20b9faa2a690f0ee47df7b938 = L.marker(
+                [-70.4, 25.75],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_07afd5d86985e529490edd8fe8a31bbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0a37b9d20b9faa2a690f0ee47df7b938.setIcon(icon_07afd5d86985e529490edd8fe8a31bbe);
+        
+    
+        var popup_e4fca03fb9b9a6f272dd9de6148e0c5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_511f2724fecb483442db82224868f291 = $(`<div id="html_511f2724fecb483442db82224868f291" style="width: 100.0%; height: 100.0%;">Name:Jinnah  Country:Pakistan  <br> Latitude: -70.4 Longitude: 25.75</div>`)[0];
+                popup_e4fca03fb9b9a6f272dd9de6148e0c5a.setContent(html_511f2724fecb483442db82224868f291);
+            
+        
+
+        marker_0a37b9d20b9faa2a690f0ee47df7b938.bindPopup(popup_e4fca03fb9b9a6f272dd9de6148e0c5a)
+        ;
+
+        
+    
+    
+            var marker_d0913edb4c059671c4105748839aaf43 = L.marker(
+                [-69.3886, 76.3808],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+            var icon_60325fd1d55af7f187271a554e11c66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d0913edb4c059671c4105748839aaf43.setIcon(icon_60325fd1d55af7f187271a554e11c66d);
+        
+    
+        var popup_8f6aefa9b144ad579a5c6b4da6fc2ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ceef2bd70c24b5812881824aa9c3afc = $(`<div id="html_8ceef2bd70c24b5812881824aa9c3afc" style="width: 100.0%; height: 100.0%;">Name:Law-Racoviță-Negoiță  Country:Romania  <br> Latitude: -69.3886 Longitude: 76.3808</div>`)[0];
+                popup_8f6aefa9b144ad579a5c6b4da6fc2ab0.setContent(html_8ceef2bd70c24b5812881824aa9c3afc);
+            
+        
+
+        marker_d0913edb4c059671c4105748839aaf43.bindPopup(popup_8f6aefa9b144ad579a5c6b4da6fc2ab0)
+        ;
+
+        
+    
+    
+            var marker_b493adcaaa69c98366ed059aef977bb6 = L.marker(
+                [-58.02010481927711, -2.937157024096385],
+                {}
+            ).addTo(map_da87ce47f9814615ee7932fff9dc75cc);
+        
+    
+        var popup_dc3b8b650323c2b5d011a0de966935ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_30ac1215ba26c79761af55d855688189 = $(`<div id="html_30ac1215ba26c79761af55d855688189" style="width: 100.0%; height: 100.0%;">     <p style="font-family:verdana; color:red">Red represent stations not have.</p>     <p style="font-family:verdana; color:blue">Blue represent stations we have.</p>     <p style="font-family:verdana; color:orange">Orange represent stations not found on WOUDC.</p> </div>`)[0];
+                popup_dc3b8b650323c2b5d011a0de966935ec.setContent(html_30ac1215ba26c79761af55d855688189);
+            
+        
+
+        marker_b493adcaaa69c98366ed059aef977bb6.bindPopup(popup_dc3b8b650323c2b5d011a0de966935ec)
+        ;
+
+        
+    
+</script>
+</html>
